@@ -31,17 +31,20 @@ body{
     font-size: 16px;
 }
 .create{
-    display: inline;
+    display: flex;
     font-weight: bold;
     margin: 15px;
-    margin-right: 50px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    margin-left: 5vw;
+    padding: 5px 15px;
+    gap: 5px;
     border-radius: 30px;
     border: 1px solid #2A2A2A;
     background-color: #2A2A2A;
+}
+.create i{
+    margin-top: 0;
+    margin-right: 0;
+    display: flex;
 }
 .left-title{
     display: flex;
@@ -50,5 +53,6 @@ body{
     color: white;
 }
 .left-title i{
-
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
 }
