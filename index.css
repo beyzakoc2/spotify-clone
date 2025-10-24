@@ -1,0 +1,54 @@
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.left-container{
+    width: 28%;
+    display: flex;
+    background-color: #121212;
+    margin: 5px;
+    flex-direction: column;
+    border-radius: 8px;
+}
+.playlist img{
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.playlist strong{
+    display: block;
+}
+.playlist{
+    display: flex;
+    color: white;
+    padding: 5px 10px;
+}
+.bookcase{
+    margin: 20px;
+    font-weight: bold;
+    display: inline;
+    font-size: 16px;
+}
+.create{
+    display: inline;
+    font-weight: bold;
+    margin: 15px;
+    margin-right: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 30px;
+    border: 1px solid #2A2A2A;
+    background-color: #2A2A2A;
+}
+.left-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+.left-title i{
+
+}
