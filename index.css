@@ -3,12 +3,14 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 .left-container{
-    width: 28%;
+    width: 25%;
     display: flex;
     background-color: #121212;
     margin: 5px;
     flex-direction: column;
     border-radius: 8px;
+    min-width: 300px;
+    max-height:700px;
 }
 .playlist img{
     width: 55px;
@@ -20,6 +22,7 @@ body{
     display: block;
 }
 .playlist{
+    overflow-y: auto;
     display: flex;
     color: white;
     padding: 5px 10px;
@@ -34,17 +37,12 @@ body{
     display: flex;
     font-weight: bold;
     margin: 15px;
-    margin-left: 5vw;
+    margin-left: 5vh;
     padding: 5px 15px;
     gap: 5px;
     border-radius: 30px;
     border: 1px solid #2A2A2A;
     background-color: #2A2A2A;
-}
-.create i{
-    margin-top: 0;
-    margin-right: 0;
-    display: flex;
 }
 .left-title{
     display: flex;
@@ -55,4 +53,65 @@ body{
 .left-title i{
     margin-top: 1.5rem;
     margin-right: 1.5rem;
+}
+.create i{
+    margin-top: 2px;
+    margin-right: 5px;
+    display: inline;
+}
+.left-nav {
+    display: flex;
+    overflow-x: auto;
+}
+.left-nav::-webkit-scrollbar {
+  height: 5px;
+}
+
+.left-nav::-webkit-scrollbar-thumb {
+  background-color: #2a2a2a;
+  border-radius: 10px;
+}
+.left-nav span{
+    color: white;
+    display: inline-flex;
+    flex-direction: row;
+    border-radius: 30px;
+    border: 1px solid #2A2A2A;
+    background-color: #2A2A2A;
+    padding: 1vh;
+    margin: 1vh 1vh;
+}
+.playlists{
+white-space: nowrap;
+}
+.upper{
+    color: white;
+}
+.search{
+    display: inline-block;
+    margin: 10px 15px;
+}
+.search:hover{
+    border: 5px;
+    border-radius: 50%;
+    background: #2A2A2A;
+    cursor: pointer;
+    transform: none;
+}
+.last-stolen{
+    display: inline-block;
+    float: right;
+    margin: 10px;
+    margin-right: 1vw;
+}
+.list{
+    overflow-y: scroll;
+}
+.list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background-color: #2a2a2a;
+  border-radius: 10px;
 }
