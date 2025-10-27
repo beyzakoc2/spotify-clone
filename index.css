@@ -10,7 +10,7 @@ body{
     flex-direction: column;
     border-radius: 8px;
     min-width: 300px;
-    max-height:700px;
+    max-height:645px;
 }
 .playlist img{
     width: 55px;
@@ -78,8 +78,9 @@ body{
     border-radius: 30px;
     border: 1px solid #2A2A2A;
     background-color: #2A2A2A;
-    padding: 1vh;
+    padding: 15px;
     margin: 1vh 1vh;
+    align-items: center;
 }
 .playlists{
 white-space: nowrap;
@@ -92,11 +93,7 @@ white-space: nowrap;
     margin: 10px 15px;
 }
 .search:hover{
-    border: 5px;
-    border-radius: 50%;
-    background: #2A2A2A;
     cursor: pointer;
-    transform: none;
 }
 .last-stolen{
     display: inline-block;
@@ -108,10 +105,32 @@ white-space: nowrap;
     overflow-y: scroll;
 }
 .list::-webkit-scrollbar {
-  width: 5px;
+    width: 5px;
 }
 
 .list::-webkit-scrollbar-thumb {
-  background-color: #2a2a2a;
-  border-radius: 10px;
+    background-color: #2a2a2a;
+    border-radius: 10px;
 }
+.top-nav i{
+    color: white;
+    font-size: 2rem;
+    margin: 15px;
+}
+.top-nav{
+    display: flex;
+    flex-direction: row;
+}
+.home{
+    color: whitesmoke;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #2A2A2A;
+    align-items: center;
+}
+.search-bar{
+    border-radius: 30px;
+    background-color: #2A2A2A;
+}
+
+
