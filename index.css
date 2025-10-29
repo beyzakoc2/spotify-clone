@@ -10,7 +10,7 @@ body{
     flex-direction: column;
     border-radius: 8px;
     min-width: 300px;
-    max-height:660px;
+    height:650px;
 }
 .playlist img{
     width: 55px;
@@ -87,6 +87,9 @@ white-space: nowrap;
 }
 .upper{
     color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .search{
     display: inline-block;
@@ -96,10 +99,8 @@ white-space: nowrap;
     cursor: pointer;
 }
 .last-stolen{
-    display: inline-block;
-    float: right;
     margin: 10px;
-    margin-right: 1vw;
+    margin-right: 20px;
 }
 .list{
     overflow-y: scroll;
@@ -112,29 +113,76 @@ white-space: nowrap;
     background-color: #2a2a2a;
     border-radius: 10px;
 }
+.top-nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+    justify-content: space-between;
+}
+.top-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.top-center {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 .spotify{
-    display: inline;
     color: white;
     font-size: 2rem;
-    margin: 15px;
+    margin: 10px;
 }
 .home{
-    display: inline-flex;
-    color: whitesmoke;
+    color: #AFAFAF;
     border-radius: 50%;
     background-color: #2A2A2A;
     padding: 10px;
+    font-size: 20px;
 }
-.search-bar{
-    padding: 10px;
+.search-bar input{
+    padding: 15px;
     color: whitesmoke;
-    display: inline-flex;
-    border-radius: 30px;
+    border: none;
     background-color: #2A2A2A;
-    width: 30vw;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
 }
 .search-bar i{
-    margin-right: 10px;
+    color: #AFAFAF;
+    font-size: 20px;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    border: 1px solid #2A2A2A;
+    border-radius: 30px;
+    background-color: #2A2A2A;
+    padding: 0 10px;
+    width: 30vw;
+}
+.notification{
+    color: #AFAFAF;
+    font-size: 15px;
+    cursor: pointer;
+}
+.friends{
+    color: #AFAFAF;
+    font-size: 15px;
+    cursor: pointer;
+}
+.profile img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
 }
 
 
