@@ -1,9 +1,11 @@
 body{
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 .left-container{
-    width: 26%;
+    flex: 1;
     display: flex;
     background-color: #121212;
     margin: 5px;
@@ -185,7 +187,7 @@ white-space: nowrap;
     height: 50px;
 }
 .right-container{
-    width: 70%;
+    flex: 3;
     margin: 5px;
     display: flex;
     border-radius: 8px;
@@ -194,34 +196,62 @@ white-space: nowrap;
 }
 .recent{
     display: flex;
-    width: 74%;
-    height: 200px;
+    height: 130px;
     color: white;
     gap: 10px;
     flex-wrap: wrap;
-    margin-left: 2vw;
-    margin-right: 2vw;
+    margin-left: 40px;
 }
-.recent img{
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-}
+
 .pop, .metal, .manifest-songs, .rüya, 
 .liked-songs, .candan-ercetin, .astrology, .rest{
     padding: 5px;
     border-radius: 5px;
     background-color: #64474D;
     border: 1px solid #64474D;
-    width: 14vw;
-    height: 40px;
+    width: 16vw;
+    height: 50px;
     padding: 0;
+}
+.recent img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
 }
 .main-container{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
-.pop span{
+.recent div{
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+}
+.category{
+    display: flex;
+    color: white;
+    flex-direction: row;
+    height: 40px;
+    margin: 15px 3vw;
+    gap: 1vw;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+.category span{
+    padding: 10px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: #4c3035;
+    border: none;
     text-align: center;
+}
+.category .podcast{
+    width: 80px;
+}
+.contents{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
