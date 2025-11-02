@@ -254,4 +254,40 @@ white-space: nowrap;
     flex-direction: column;
     gap: 10px;
 }
+.recommended{
+    display: flex;
+    flex-direction: row;
+    color: #9D9D9D;
+    margin-top: 0;
+    margin-left: 40px;
+    font-size: 15px;
+    gap: 30px;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    width: 70vw;
+}
+.recommended img{
+    width: 170px;
+    height: 170px;
+    border-radius: 5px;
+}
+h3{
+    display: inline-block;
+    margin-left: 40px;
+    color: white;
+    width: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.recommended div{
+    width: 160px;
+    height: 220px;
+}
+.recommended::-webkit-scrollbar {
+    height: 5px;
+}
 
+.recommended::-webkit-scrollbar-thumb {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+}
