@@ -18,21 +18,25 @@ body{
     height: 55px;
     border-radius: 5px;
     margin-right: 10px;
+    cursor: pointer;
 }
 .playlist strong{
     display: block;
+    cursor: pointer;
 }
 .playlist{
     overflow-y: auto;
     display: flex;
     color: white;
     padding: 5px 10px;
+    align-items: center;
 }
 .bookcase{
     margin: 20px;
     font-weight: bold;
     display: inline;
     font-size: 16px;
+    cursor: pointer;
 }
 .create{
     display: flex;
@@ -44,6 +48,10 @@ body{
     border-radius: 30px;
     border: 1px solid #2A2A2A;
     background-color: #2A2A2A;
+    cursor: pointer;
+}
+.create:hover{
+    background-color: #434242;
 }
 .left-title{
     display: flex;
@@ -52,8 +60,9 @@ body{
     color: white;
 }
 .left-title i{
-    margin-top: 1.5rem;
-    margin-right: 1.5rem;
+    margin-top: 24px;
+    margin-right: 24px;
+    cursor: pointer;
 }
 .create i{
     margin-top: 2px;
@@ -82,12 +91,16 @@ body{
     padding: 15px;
     margin: 1vh 1vh;
     align-items: center;
+    cursor: pointer;
+}
+.left-nav span:hover{
+    background-color: #333333;
 }
 .playlists{
 white-space: nowrap;
 }
 .upper{
-    color: white;
+    color: #797777;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -95,13 +108,18 @@ white-space: nowrap;
 .search{
     display: inline-block;
     margin: 10px 15px;
+    cursor: pointer;
 }
 .search:hover{
-    cursor: pointer;
+    color: whitesmoke;
 }
 .last-stolen{
     margin: 10px;
     margin-right: 20px;
+    cursor: pointer;
+}
+.last-stolen:hover{
+    color: whitesmoke;
 }
 .list{
     overflow-y: scroll;
@@ -139,6 +157,7 @@ white-space: nowrap;
     color: white;
     font-size: 2rem;
     margin: 10px;
+    cursor: pointer;
 }
 .home{
     color: #AFAFAF;
@@ -146,6 +165,11 @@ white-space: nowrap;
     background-color: #2A2A2A;
     padding: 10px;
     font-size: 20px;
+    cursor: pointer;
+}
+.home:hover{
+    background-color:#4d4d4d;
+    color: whitesmoke;
 }
 .search-bar input{
     padding: 15px;
@@ -168,31 +192,35 @@ white-space: nowrap;
     background-color: #2A2A2A;
     padding: 0 10px;
     width: 30vw;
+    cursor: pointer;
 }
-.notification{
+.notification, .friends{
     color: #AFAFAF;
     font-size: 15px;
     cursor: pointer;
 }
-.friends{
-    color: #AFAFAF;
-    font-size: 15px;
-    cursor: pointer;
+.notification:hover{
+    color: white;
+}
+.friends:hover{
+    color: white;
 }
 .profile img{
     border-radius: 50%;
     width: 50px;
     height: 50px;
+    cursor: pointer;
 }
 .right-container{
     flex: 3;
-    height: 650px;
+    max-height: 650px;
     margin: 5px;
     display: flex;
     border-radius: 8px;
-    flex-direction: row;
+    flex-direction: column;
     background-color: #39181F;
-    overflow-y: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .right-container::-webkit-scrollbar {
     width: 5px;
@@ -234,6 +262,7 @@ white-space: nowrap;
     display: flex;
     align-items: center;
     gap: 5px; 
+    cursor: pointer;
 }
 .category{
     display: flex;
@@ -245,6 +274,8 @@ white-space: nowrap;
     white-space: nowrap;
     box-sizing: border-box;
     z-index: 2;
+    position: sticky;
+    top: 15px;
 }
 .category span{
     padding: 10px;
@@ -253,6 +284,10 @@ white-space: nowrap;
     background-color: #4c3035;
     border: none;
     text-align: center;
+    cursor: pointer;
+}
+.category span:hover{
+    background-color: #64474D;
 }
 .category .podcast{
     width: 80px;
@@ -269,8 +304,7 @@ white-space: nowrap;
     margin-top: 0;
     margin-left: 40px;
     font-size: 15px;
-    gap: 30px;
-    overflow-x: scroll;
+    overflow-x: auto;
     flex-wrap: nowrap;
     width: 70vw;
 }
@@ -287,9 +321,22 @@ h3{
     font-size: 25px;
     margin-bottom: 10px;
 }
+h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 .recommended div{
     width: 160px;
     height: 220px;
+    cursor: pointer;
+    padding: 10px;
+    padding-right: 20px;
+}
+.recommended div:hover{
+    background-color: #64474D;
+    border-radius: 5px;
+    padding: 10px;
+    padding-right: 20px;
 }
 .recommended::-webkit-scrollbar {
     height: 5px;
@@ -303,8 +350,7 @@ h3{
     flex-direction: row;
     margin-top: 0;
     margin-left: 40px;
-    gap: 30px;
-    overflow-x: scroll;
+    overflow-x:auto;
     flex-wrap: nowrap;
     width: 70vw;
     font-size: 15px;
@@ -314,4 +360,24 @@ h3{
     width: 170px;
     height: 170px;
     border-radius: 5px;
+}
+.nostalgia::-webkit-scrollbar {
+    height: 5px;
+}
+.nostalgia::-webkit-scrollbar-thumb {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+}
+.nostalgia div{
+    width: 160px;
+    height: 220px;
+    cursor: pointer;
+    padding: 10px;
+    padding-right: 20px;
+}
+.nostalgia div:hover{
+    background-color: #64474D;
+    border-radius: 5px;
+    padding: 10px;
+    padding-right: 20px;
 }
