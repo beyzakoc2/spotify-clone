@@ -18,11 +18,9 @@ body{
     height: 55px;
     border-radius: 5px;
     margin-right: 10px;
-    cursor: pointer;
 }
 .playlist strong{
     display: block;
-    cursor: pointer;
 }
 .playlist{
     overflow-y: auto;
@@ -30,6 +28,12 @@ body{
     color: white;
     padding: 5px 10px;
     align-items: center;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.playlist:hover{
+    background-color: #1F1F1F;
+    border-radius: 5px;
 }
 .bookcase{
     margin: 20px;
@@ -88,16 +92,14 @@ body{
     border-radius: 30px;
     border: 1px solid #2A2A2A;
     background-color: #2A2A2A;
-    padding: 15px;
-    margin: 1vh 1vh;
+    padding: 16px 10px;
+    margin: 8px 8px;
     align-items: center;
     cursor: pointer;
+    white-space: nowrap;
 }
 .left-nav span:hover{
     background-color: #333333;
-}
-.playlists{
-white-space: nowrap;
 }
 .upper{
     color: #797777;
@@ -146,7 +148,7 @@ white-space: nowrap;
 .top-center {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 .top-right {
     display: flex;
@@ -191,7 +193,7 @@ white-space: nowrap;
     border-radius: 30px;
     background-color: #2A2A2A;
     padding: 0 10px;
-    width: 30vw;
+    width: 450px;
     cursor: pointer;
 }
 .notification, .friends{
@@ -380,4 +382,32 @@ h3:hover{
     border-radius: 5px;
     padding: 10px;
     padding-right: 20px;
+}
+@media(max-width:1175px){
+.recent{
+    width: 50vw;
+    min-width: 150px;
+}
+.recent div{
+    width: 24vw;
+    font-size: 15px;
+}
+.pop, .metal, .manifest-songs, .rüya, 
+.liked-songs, .candan-ercetin, .astrology, .rest{
+    height: 40px;
+}
+.recent img{
+    width: 40px;
+    height: 40px;
+}
+.for-you{
+    margin-top: 80px;
+}
+.top-nav{
+    justify-content: flex-start;
+    align-items: center;
+}
+.top-right{
+    margin-left: auto;
+}
 }
