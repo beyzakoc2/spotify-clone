@@ -324,6 +324,7 @@ h3{
     width: bold;
     font-size: 25px;
     margin-bottom: 10px;
+    white-space: nowrap;
 }
 h3:hover{
     text-decoration: underline;
@@ -387,10 +388,10 @@ h3:hover{
 }
 @media(max-width:1175px){
 .recent{
-    width: 50vw;
+    width: 56vw;
 }
 .recent div{
-    width: 24vw;
+    width: 27vw;
     font-size: 15px;
 }
 .pop, .metal, .manifest-songs, .rüya, 
@@ -411,11 +412,26 @@ h3:hover{
 .top-right{
     margin-left: auto;
 }
+.create span{
+    display: none;
 }
-@media (max-width:780px) {
+.create{
+    border: none;
+    background-color: #121212;
+    margin-left: 100px;
+}
+}
+@media (max-width:850px) {
 .pop, .metal, .manifest-songs, .rüya, 
 .liked-songs, .candan-ercetin, .astrology, .rest{
     min-width: 12vh;
+}
+.recent {
+    width: 500px;
+    height: 130px;
+}
+.recent div{
+    width: 225px;
 }
 .search-bar input{
     display: none;
