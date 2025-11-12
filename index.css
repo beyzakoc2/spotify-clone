@@ -140,7 +140,7 @@ body {
   width: 100%;
   gap: 10px;
   justify-content: space-between;
-  height: 8vh;
+  height: 4rem;
 }
 .top-left {
   display: flex;
@@ -397,15 +397,19 @@ h3:hover {
 }
 .player {
   display: flex;
+  flex-direction: column;
+}
+.player {
+  display: flex;
+  flex: 3;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  height: 9vh;
-  margin: 0;
-  margin-top: 0.8rem;
+  height: 4.5rem;
   color: whitesmoke;
 }
 .player-left {
+  margin-top: 0.7rem;
   display: flex;
   font-size: 1rem;
   align-items: center;
@@ -418,10 +422,16 @@ h3:hover {
 }
 .player-center {
   display: flex;
-  margin-top: 0;
-  gap: 2rem;
+  flex-direction: column;
+  gap: 0.5rem;
   align-items: center;
   font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+.keys {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
 }
 .player small {
   display: block;
@@ -437,7 +447,7 @@ h3:hover {
 .player img {
   width: 3.5rem;
   height: 3.5rem;
-  margin: 0 1rem;
+  margin: 0.5rem 1rem;
   border-radius: 0.2rem;
 }
 .player-bar {
@@ -446,6 +456,7 @@ h3:hover {
   border-radius: 0.3rem;
   background-color: #333333;
   border: none;
+  margin-bottom: 0.5rem;
 }
 .sound-bar {
   width: 5rem;
