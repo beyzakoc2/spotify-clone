@@ -12,7 +12,7 @@ body {
   flex-direction: column;
   border-radius: 0.5rem;
   min-width: 19rem;
-  height: 77vh;
+  height: 78.5vh;
 }
 .playlist img {
   width: 3.4rem;
@@ -144,7 +144,7 @@ body {
   width: 100%;
   gap: 10px;
   justify-content: space-between;
-  height: 10%;
+  height: 4rem;
 }
 .top-left {
   display: flex;
@@ -223,7 +223,7 @@ body {
 }
 .right-container {
   flex: 3;
-  height: 77vh;
+  height: 78.5vh;
   margin: 0.3rem;
   display: flex;
   border-radius: 0.5rem;
@@ -273,7 +273,7 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 80%;
+  height: 100%;
 }
 .recent div {
   display: flex;
@@ -401,20 +401,17 @@ h3:hover {
 }
 .player {
   display: flex;
-  flex: 3;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  height: 10%;
+  height: 5rem;
   color: whitesmoke;
-  position: sticky;
   z-index: 10;
   align-items: center;
   bottom: 0;
   background-color: black;
 }
 .player-left {
-  margin-top: 0.5rem;
   display: flex;
   font-size: 1rem;
   align-items: center;
@@ -452,7 +449,7 @@ h3:hover {
 .player img {
   width: 3.5rem;
   height: 3.5rem;
-  margin: 1rem;
+  margin: 0.5rem 1rem;
   border-radius: 0.2rem;
 }
 .player-bar {
