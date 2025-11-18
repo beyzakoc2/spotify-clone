@@ -14,6 +14,7 @@ body {
   min-width: 19rem;
   height: 78.5vh;
 }
+
 .playlist img {
   width: 3.4rem;
   height: 3.4rem;
@@ -74,37 +75,7 @@ body {
   margin-right: 0.3rem;
   display: inline;
 }
-.left-nav {
-  display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
-  height: 3.5rem;
-}
-.left-nav::-webkit-scrollbar {
-  height: 0.3rem;
-}
 
-.left-nav::-webkit-scrollbar-thumb {
-  background-color: #2a2a2a;
-  border-radius: 0.5rem;
-}
-.left-nav span {
-  color: white;
-  display: inline-flex;
-  flex-direction: row;
-  border-radius: 2rem;
-  border: 1px solid #2a2a2a;
-  background-color: #2a2a2a;
-  padding: 1rem 0.6rem;
-  margin: 0.5rem 0.5rem;
-  align-items: center;
-  cursor: pointer;
-  white-space: nowrap;
-  height: 0.5rem;
-}
-.left-nav span:hover {
-  background-color: #333333;
-}
 .upper {
   color: #797777;
   display: flex;
@@ -127,16 +98,48 @@ body {
 .last-played:hover {
   color: whitesmoke;
 }
-.list {
+.list-container {
   flex: 1;
   overflow-y: scroll;
 }
-.list::-webkit-scrollbar {
+.list-container::-webkit-scrollbar {
   width: 0.3rem;
 }
-.list::-webkit-scrollbar-thumb {
+.list-container::-webkit-scrollbar-thumb {
   background-color: #2a2a2a;
   border-radius: 0.5rem;
+}
+.left-nav {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 3.5rem;
+}
+.left-nav::-webkit-scrollbar {
+  height: 0.3rem;
+}
+
+.left-nav::-webkit-scrollbar-thumb {
+  background-color: #2a2a2a;
+  border-radius: 0.5rem;
+}
+.left-nav a {
+  color: white;
+  display: inline-flex;
+  flex-direction: row;
+  border-radius: 2rem;
+  border: 1px solid #2a2a2a;
+  background-color: #2a2a2a;
+  padding: 1rem 0.6rem;
+  margin: 0.5rem 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  white-space: nowrap;
+  height: 0.5rem;
+  text-decoration: none;
+}
+.left-nav a:hover {
+  background-color: #333333;
 }
 .top-nav {
   display: flex;
@@ -404,7 +407,7 @@ h3:hover {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  height: 5rem;
+  height: 4rem;
   color: whitesmoke;
   z-index: 10;
   align-items: center;
@@ -467,6 +470,43 @@ h3:hover {
   border-radius: 0.3rem;
   font-weight: bold;
   background-color: white;
+}
+.playlists-list {
+  display: block;
+}
+.artists-list,
+.albums-list {
+  display: none;
+}
+/* artist görünürse */
+#artists:target ~ .list-container .artists-list {
+  display: block;
+}
+#artists:target ~ .list-container .playlists-list {
+  display: none;
+}
+#artists:target ~ .list-container .albums-list {
+  display: none;
+}
+/* albums görünürse */
+#albums:target ~ .list-container .albums-list {
+  display: block;
+}
+#albums:target ~ .list-container .artists-list {
+  display: none;
+}
+#albums:target ~ .list-container .playlists-list {
+  display: none;
+}
+/* playlists görünürse */
+#playlists:target ~ .list-container .playlists-list {
+  display: block;
+}
+#playlists:target ~ .list-container .artists-list {
+  display: none;
+}
+#playlists:target ~ .list-container .albums-list {
+  display: none;
 }
 @media (max-width: 1175px) {
   .recent {
