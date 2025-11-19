@@ -36,7 +36,10 @@ body {
   background-color: #1f1f1f;
   border-radius: 0.3rem;
 }
-.bookcase {
+.bookcase i {
+  display: none;
+}
+.bookcase span {
   margin: 1.2rem;
   font-weight: bold;
   display: inline;
@@ -585,5 +588,31 @@ h3:hover {
   }
   .player-bar {
     min-width: 18rem;
+  }
+  .left-container {
+    min-width: 2rem;
+    width: 5rem;
+    max-width: 5rem;
+  }
+  .bookcase span,
+  .left-nav,
+  .create,
+  .left-title i,
+  .playlist strong,
+  .playlist small,
+  .upper {
+    display: none;
+  }
+  .bookcase i,
+  .create i {
+    display: block;
+    font-size: 1.5rem;
+    color: #afafaf;
+    margin: 1rem 1.5rem;
+  }
+  .playlist img {
+    margin: 0;
+    width: 3.1rem;
+    height: 3.1rem;
   }
 }
