@@ -14,7 +14,6 @@ body {
   min-width: 19rem;
   height: 78.5vh;
 }
-
 .playlist img {
   width: 3.4rem;
   height: 3.4rem;
@@ -75,7 +74,6 @@ body {
   margin-right: 0.3rem;
   display: inline;
 }
-
 .upper {
   color: #797777;
   display: flex;
@@ -98,14 +96,15 @@ body {
 .last-played:hover {
   color: whitesmoke;
 }
-.list-container {
+.scroll-area {
   flex: 1;
   overflow-y: scroll;
+  height: 62vh;
 }
-.list-container::-webkit-scrollbar {
+.scroll-area::-webkit-scrollbar {
   width: 0.3rem;
 }
-.list-container::-webkit-scrollbar-thumb {
+.scroll-area::-webkit-scrollbar-thumb {
   background-color: #2a2a2a;
   border-radius: 0.5rem;
 }
@@ -471,6 +470,11 @@ h3:hover {
   font-weight: bold;
   background-color: white;
 }
+#playlists-tab,
+#artists-tab,
+#albums-tab {
+  display: none;
+}
 .playlists-list {
   display: block;
 }
@@ -479,33 +483,33 @@ h3:hover {
   display: none;
 }
 /* artist görünürse */
-#artists:target ~ .list-container .artists-list {
+#artists-tab:target ~ .scroll-area .artists-list {
   display: block;
 }
-#artists:target ~ .list-container .playlists-list {
+#artists-tab:target ~ .scroll-area .playlists-list {
   display: none;
 }
-#artists:target ~ .list-container .albums-list {
+#artists-tab:target ~ .scroll-area .albums-list {
   display: none;
 }
 /* albums görünürse */
-#albums:target ~ .list-container .albums-list {
+#albums-tab:target ~ .scroll-area .albums-list {
   display: block;
 }
-#albums:target ~ .list-container .artists-list {
+#albums-tab:target ~ .scroll-area .artists-list {
   display: none;
 }
-#albums:target ~ .list-container .playlists-list {
+#albums-tab:target ~ .scroll-area .playlists-list {
   display: none;
 }
 /* playlists görünürse */
-#playlists:target ~ .list-container .playlists-list {
+#playlists-tab:target ~ .scroll-area .playlists-list {
   display: block;
 }
-#playlists:target ~ .list-container .artists-list {
+#playlists-tab:target ~ .scroll-area .artists-list {
   display: none;
 }
-#playlists:target ~ .list-container .albums-list {
+#playlists-tab:target ~ .scroll-area .albums-list {
   display: none;
 }
 @media (max-width: 1175px) {

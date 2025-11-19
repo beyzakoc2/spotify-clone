@@ -47,144 +47,139 @@
           <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
         </div>
 
-        <div class="list-container">
-          <div class="left-nav">
-            <a href="#playlists" class="tab">Çalma Listeleri</a>
-            <a href="#artists" class="tab">Sanatçılar</a>
-            <a href="#albums" class="tab">Albümler</a>
-          </div>
-          <div class="list">
-            <div class="upper">
-              <div class="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </div>
-              <div class="last-played">
-                <span>Son Çalınanlar </span><i class="fa-solid fa-bars"></i>
-              </div>
-            </div>
-            <div id="playlists"></div>
-            <div id="artists"></div>
-            <div id="albums"></div>
-            <div class="playlists-list">
-              <div class="playlist">
-                <img src="images/liked-songs-300.jpg" alt="" />
-                <p>
-                  <strong>Beğenilen Şarkılar</strong>
-                  <small>Çalma Listesi . 23 Şarkı</small>
-                </p>
-              </div>
-              <div class="playlist">
-                <img src="images/hadise.jpg" alt="" />
-                <p>
-                  <strong>This is Hadise</strong>
-                  <small>Çalma Listesi . Spotify</small>
-                </p>
-              </div>
-              <div class="playlist">
-                <img src="images/ati242.jpg" alt="" />
-                <p>
-                  <strong>This is Ati242</strong>
-                  <small>Çalma Listesi . Spotify</small>
-                </p>
-              </div>
-              <div class="playlist">
-                <img src="images/tarkan.jpeg" alt="" />
-                <p>
-                  <strong>This is Tarkan</strong>
-                  <small>Çalma Listesi . Spotify</small>
-                </p>
-              </div>
-              <div class="playlist">
-                <img src="images/manifest.png" alt="" />
-                <p>
-                  <strong>This is Manifest</strong>
-                  <small>Çalma Listesi . Spotify</small>
-                </p>
-              </div>
-              <div class="playlist">
-                <img src="images/duman.jpg" alt="" />
-                <p>
-                  <strong>Duman Mix</strong>
-                  <small>Çalma Listesi . Spotify</small>
-                </p>
-              </div>
-              <div class="playlist">
-                <img src="images/cem-karaca.jpg" alt="" />
-                <p>
-                  <strong>Anadolu Rock</strong>
-                  <small>Çalma Listesi . Spotify</small>
-                </p>
-              </div>
-              <div class="playlist">
-                <img src="images/22.jpg" alt="" />
-                <p>
-                  <strong>777</strong>
-                  <small>Çalma Listesi . beyzaabb</small>
-                </p>
-              </div>
-            </div>
-            <!--playlists-list div-->
-
-            <div class="artists-list">
-              <div class="playlist">
-                <img src="images/duman.jpg" alt="" />
-                <p>
-                  <strong>Duman Mix</strong>
-                  <small>Çalma Listesi . Spotify</small>
-                </p>
-              </div>
-              <div class="playlist">
-                <img src="images/cem-karaca.jpg" alt="" />
-                <p>
-                  <strong>Anadolu Rock</strong>
-                  <small>Çalma Listesi . Spotify</small>
-                </p>
-              </div>
-              <div class="playlist">
-                <img src="images/duman.jpg" alt="" />
-                <p>
-                  <strong>Duman Mix</strong>
-                  <small>Çalma Listesi . Spotify</small>
-                </p>
-              </div>
-              <div class="playlist">
-                <img src="images/tarkan.jpeg" alt="" />
-                <p>
-                  <strong>This is Tarkan</strong>
-                  <small>Çalma Listesi . Spotify</small>
-                </p>
-              </div>
-            </div>
-            <!--artists-list div-->
-
-            <div class="albums-list">
-              <div class="playlist">
-                <img src="images/hadise.jpg" alt="" />
-                <p>
-                  <strong>This is Hadise</strong>
-                  <small>Çalma Listesi . Spotify</small>
-                </p>
-              </div>
-              <div class="playlist">
-                <img src="images/ati242.jpg" alt="" />
-                <p>
-                  <strong>This is Ati242</strong>
-                  <small>Çalma Listesi . Spotify</small>
-                </p>
-              </div>
-              <div class="playlist">
-                <img src="images/manifest.png" alt="" />
-                <p>
-                  <strong>This is Manifest</strong>
-                  <small>Çalma Listesi . Spotify</small>
-                </p>
-              </div>
-            </div>
-            <!--albums-list div-->
-          </div>
-          <!--list div-->
+        <div class="left-nav">
+          <a href="#playlists-tab" class="tab">Çalma Listeleri</a>
+          <a href="#artists-tab" class="tab">Sanatçılar</a>
+          <a href="#albums-tab" class="tab">Albümler</a>
         </div>
-        <!--list-container div-->
+        <div id="playlists-tab"></div>
+        <div id="artists-tab"></div>
+        <div id="albums-tab"></div>
+        <div class="scroll-area">
+          <div class="upper">
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="last-played">
+              <span>Son Çalınanlar </span><i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+          <div class="playlists-list">
+            <div class="playlist">
+              <img src="images/liked-songs-300.jpg" alt="" />
+              <p>
+                <strong>Beğenilen Şarkılar</strong>
+                <small>Çalma Listesi . 23 Şarkı</small>
+              </p>
+            </div>
+            <div class="playlist">
+              <img src="images/hadise.jpg" alt="" />
+              <p>
+                <strong>This is Hadise</strong>
+                <small>Çalma Listesi . Spotify</small>
+              </p>
+            </div>
+            <div class="playlist">
+              <img src="images/ati242.jpg" alt="" />
+              <p>
+                <strong>This is Ati242</strong>
+                <small>Çalma Listesi . Spotify</small>
+              </p>
+            </div>
+            <div class="playlist">
+              <img src="images/tarkan.jpeg" alt="" />
+              <p>
+                <strong>This is Tarkan</strong>
+                <small>Çalma Listesi . Spotify</small>
+              </p>
+            </div>
+            <div class="playlist">
+              <img src="images/manifest.png" alt="" />
+              <p>
+                <strong>This is Manifest</strong>
+                <small>Çalma Listesi . Spotify</small>
+              </p>
+            </div>
+            <div class="playlist">
+              <img src="images/duman.jpg" alt="" />
+              <p>
+                <strong>Duman Mix</strong>
+                <small>Çalma Listesi . Spotify</small>
+              </p>
+            </div>
+            <div class="playlist">
+              <img src="images/cem-karaca.jpg" alt="" />
+              <p>
+                <strong>Anadolu Rock</strong>
+                <small>Çalma Listesi . Spotify</small>
+              </p>
+            </div>
+            <div class="playlist">
+              <img src="images/22.jpg" alt="" />
+              <p>
+                <strong>777</strong>
+                <small>Çalma Listesi . beyzaabb</small>
+              </p>
+            </div>
+          </div>
+          <!--playlists-list div-->
+          <div class="artists-list">
+            <div class="playlist">
+              <img src="images/ati242.jpg" alt="" />
+              <p>
+                <strong>This is Ati242</strong>
+                <small>Çalma Listesi . Spotify</small>
+              </p>
+            </div>
+            <div class="playlist">
+              <img src="images/cem-karaca.jpg" alt="" />
+              <p>
+                <strong>Anadolu Rock</strong>
+                <small>Çalma Listesi . Spotify</small>
+              </p>
+            </div>
+            <div class="playlist">
+              <img src="images/duman.jpg" alt="" />
+              <p>
+                <strong>Duman Mix</strong>
+                <small>Çalma Listesi . Spotify</small>
+              </p>
+            </div>
+            <div class="playlist">
+              <img src="images/tarkan.jpeg" alt="" />
+              <p>
+                <strong>This is Tarkan</strong>
+                <small>Çalma Listesi . Spotify</small>
+              </p>
+            </div>
+          </div>
+          <!--artists-list div-->
+          <div class="albums-list">
+            <div class="playlist">
+              <img src="images/hadise.jpg" alt="" />
+              <p>
+                <strong>This is Hadise</strong>
+                <small>Çalma Listesi . Spotify</small>
+              </p>
+            </div>
+            <div class="playlist">
+              <img src="images/ati242.jpg" alt="" />
+              <p>
+                <strong>This is Ati242</strong>
+                <small>Çalma Listesi . Spotify</small>
+              </p>
+            </div>
+            <div class="playlist">
+              <img src="images/manifest.png" alt="" />
+              <p>
+                <strong>This is Manifest</strong>
+                <small>Çalma Listesi . Spotify</small>
+              </p>
+            </div>
+          </div>
+          <!--albums-list div-->
+        </div>
+        <!--scroll-area div-->
       </div>
       <!--left-container div-->
       <div class="right-container">
