@@ -565,7 +565,7 @@ h3:hover {
   .candan-ercetin,
   .astrology,
   .rest {
-    min-width: 12vh;
+    min-width: 12vw;
   }
   .recent {
     width: 31.3rem;
@@ -603,8 +603,7 @@ h3:hover {
   .upper {
     display: none;
   }
-  .bookcase i,
-  .create i {
+  .bookcase i {
     display: block;
     font-size: 1.5rem;
     color: #afafaf;
